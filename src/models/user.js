@@ -17,6 +17,9 @@ const userSchema = mongoose.Schema({
     phone: {
         type: String
     },
+    role: {
+        type: String
+    },
     address: [
         {
             flatNo: {

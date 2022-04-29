@@ -2,10 +2,11 @@ version: '3'
 
 services:
   express-app:
+    image: vamshidev333/node-app
     build: 
       context: .
       args:
         - NODE_ENV=production
     environment:
-      - PORT=8080
+      - PORT=3000
     command: npm run start
