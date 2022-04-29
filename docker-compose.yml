@@ -12,6 +12,7 @@ services:
 
     environment:
       - PORT=8080
+      - JWT_SECRET=${JWT_SECRET}
     command: npm run start
   mongo:
     image: mongo

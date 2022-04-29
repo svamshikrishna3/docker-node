@@ -10,6 +10,6 @@ module.exports = {
         db: deferConfig(c => c.serviceName)
     },
     jwt: {
-        secret_key: "ExpressApp"
+        secret_key: process.env.JWT_SECRET
     }
 }
