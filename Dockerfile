@@ -1,4 +1,4 @@
-FROM node
+FROM --platform=linux/x86-64 node
 WORKDIR /app/
 
 COPY ./package.json .
@@ -12,7 +12,7 @@ RUN if [ ${NODE_ENV} = "development" ]; \
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 3000
 
 CMD ["npm", "run", "dev"]
 
